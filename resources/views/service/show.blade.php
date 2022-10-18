@@ -10,9 +10,16 @@
     <div class="col-md-8">
       <div class="card-body">
         <h5 class="card-title">
-           {{ $viewData["service"]["name"] }} (precio: ${{ $viewData["service"]["price"] }})
+           Nombre: {{ $viewData["service"]["name"] }}
         </h5>
-        <p class="card-text">{{ $viewData["service"]["fast"] == 1 ? 'Debe de estar en ayunas' : 'No debe de estar en ayunas' }}</p>
+        <br>
+        <h5 class="card-title">
+            Precio: ${{ $viewData["service"]["price"] }}
+        </h5>
+        <br>
+        <h5 class="card-title">
+            En ayunas: {{ $viewData["service"]["fast"] == 1 ? 'Si' : 'Nos' }}
+        </h5>
       </div>
     </div>
   </div>

@@ -9,11 +9,14 @@
       <img src="{{ asset('/img/'.$service["image"]) }}" class="card-img-top img-card">
       <div class="card-body text-center">
         <a href="{{ route('service.show', ['id'=> $service["id"]]) }}"
-          class="btn bg-primary text-white">{{ $service["name"] }}</a>
+            class="btn bg-primary text-white mt-2">Nombre: {{ $service["name"] }}</a>
+        <br>
         <a href="{{ route('service.show', ['id'=> $service["id"]]) }}"
-          class="btn bg-primary text-white">Precio: {{ $service["price"] }}</a>
+            class="btn bg-primary text-white mt-2">Precio: {{ $service["price"] }}</a>
+        <br>
         <a href="{{ route('service.show', ['id'=> $service["id"]]) }}"
-          class="btn bg-primary text-white">En ayunas: {{ $service["fast"] == 1 ? 'Si' : 'No' }}</a>
+            class="btn bg-primary text-white mt-2">En ayunas: {{ $service["fast"] == 1 ? 'Si' : 'No' }}</a>
+        <br>
       </div>
     </div>
   </div>
